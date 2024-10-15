@@ -38,7 +38,6 @@ export const ExitButton = (props: ExitButtonProps) => {
           </div>
         </div>
       )}
-      {/* TODO: open confirm dialog */}
       <button
         onClick={() => toggleConfirm(true)}
         className='absolute bottom-0 flex items-center justify-center w-16 h-16 border rounded-full shadow-md bg-gray-950 left-4 shadow-red-500/60 active:shadow-red-500 border-red-600/40 active:border-red-600/60'
