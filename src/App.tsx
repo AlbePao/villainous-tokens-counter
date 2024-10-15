@@ -26,7 +26,7 @@ function App() {
 
   return (
     <>
-      <div>
+      <div className='text-white'>
         <p>
           Screen Wake Lock API supported: <b>{`${isSupported}`}</b>
           <br />
