@@ -2,7 +2,13 @@ import { useState } from 'react';
 import { SvgCheck } from './SvgCheck';
 import { SvgClose } from './SvgClose';
 
-export const ExitButton = () => {
+type ExitButtonProps = {
+  onCancel: () => void;
+};
+
+export const ExitButton = (props: ExitButtonProps) => {
+  const { onCancel } = props;
+
   const [confirmOpened, toggleConfirm] = useState(false);
 
   return (
@@ -23,7 +29,7 @@ export const ExitButton = () => {
                 <SvgClose width='48' height='48' className='fill-red-800' />
               </button>
               <button
-                onClick={() => toggleConfirm(true)}
+                onClick={onCancel}
                 className='flex items-center justify-center w-16 h-16 border rounded-full shadow-md bg-gray-950 left-4 shadow-green-500/60 active:shadow-green-500 border-green-600/40 active:border-green-600/60'
               >
                 <SvgCheck width='48' height='48' className='fill-green-800' />
