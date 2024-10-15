@@ -1,5 +1,5 @@
 import '@fontsource/pirata-one';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { VillainCard } from './components/VillainCard';
 import { VillainDashboard } from './components/VillainDashboard';
 import { Villain } from './models/villain';
@@ -12,6 +12,10 @@ function App() {
   // TODO: add fake spinner
   // TODO: get current villain from localStorage, if null, show villains list
   // TODO: if villain is selected, prevent reloading and tab close
+
+  useEffect(() => {}, [villain]);
+
+  useEffect(() => {}, []);
 
   return (
     <>
