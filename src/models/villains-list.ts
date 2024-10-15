@@ -3,31 +3,31 @@ import { Villain } from './villain';
 export const villains: Villain[] = [
   {
     name: 'Captain Hook',
-    image: '/src/assets/Captain_Hook.png',
+    image: '/Captain_Hook.png',
   },
   {
     name: 'Jafar',
-    image: '/src/assets/Jafar.png',
+    image: '/Jafar.png',
   },
   {
     name: 'Maleficent',
-    image: '/src/assets/Maleficent.png',
+    image: '/Maleficent.png',
   },
   {
     name: 'Prince John',
-    image: '/src/assets/Prince_John.png',
+    image: '/Prince_John.png',
   },
   {
     name: 'Queen of Hearts',
-    image: '/src/assets/Queen_of_Hearts.png',
+    image: '/Queen_of_Hearts.png',
   },
   {
     name: 'Ursula',
-    image: '/src/assets/Ursula.png',
+    image: '/Ursula.png',
   },
   {
     name: 'Mother Gothel',
-    image: '/src/assets/Mother_Gothel.png',
+    image: '/Mother_Gothel.png',
     customToken: {
       name: 'Fiducia',
       color: {
