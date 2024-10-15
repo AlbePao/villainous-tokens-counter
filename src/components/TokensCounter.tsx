@@ -22,16 +22,14 @@ export const TokensCounter = (props: { customToken?: CustomToken }) => {
 
   return (
     <div className='w-full my-4'>
-      <div className={`text-4xl font-semibold mb-4 text-center w-full ${textColor}`}>
-        {customToken?.name ?? 'Potere'}
-      </div>
+      <div className={`text-4xl mb-4 text-center w-full ${textColor}`}>{customToken?.name ?? 'Potere'}</div>
       <div className='flex flex-row items-center w-full justify-evenly'>
         <button
           onClick={decrement}
           disabled={isDecrementDisabled}
           className={`${buttonClass}${isDecrementDisabled && ' opacity-50'}`}
         >
-          <span className={`text-4xl font-bold ${textColor}`}>-</span>
+          <span className={`text-4xl ${textColor}`}>-</span>
         </button>
         <div className='flex items-center justify-center w-32 h-32 p-2 rounded-full shadow shadow-yellow-500/30 bg-gray-950'>
           <div
@@ -41,7 +39,7 @@ export const TokensCounter = (props: { customToken?: CustomToken }) => {
           </div>
         </div>
         <button onClick={increment} className={buttonClass}>
-          <span className={`text-4xl font-bold ${textColor}`}>+</span>
+          <span className={`text-4xl ${textColor}`}>+</span>
         </button>
       </div>
     </div>
