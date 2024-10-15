@@ -6,7 +6,7 @@ export const manifestForPlugin: Partial<VitePWAOptions> = {
   includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'masked-icon.svg'],
   manifest: {
     name: 'Villainous Tokens Counter',
-    short_name: 'villainous-tokens-counter',
+    short_name: 'Tokens Counter',
     description: 'I am a simple vite app',
     icons: [
       {
