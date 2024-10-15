@@ -1,4 +1,4 @@
-import { Villain } from './villain';
+import { Villain } from '../models/villain';
 
 export type VillainCardProps = Villain & {
   onClick: () => void;
