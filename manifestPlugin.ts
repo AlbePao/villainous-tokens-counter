@@ -33,9 +33,9 @@ export const manifestForPlugin: Partial<VitePWAOptions> = {
     'Yzma.png',
   ],
   manifest: {
-    name: 'Villainous Tokens Counter',
-    short_name: 'Tokens Counter',
-    description: 'I am a simple vite app',
+    name: 'Villainous Tokens',
+    short_name: 'Villainous Tokens',
+    description: 'Token counter for VIllainous board game series',
     icons: [
       {
         src: '/android-chrome-192x192.png',
