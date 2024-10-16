@@ -12,3 +12,22 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+@supports (padding-top: env(safe-area-inset-top)) {
+  body {
+    --safe-area-inset-top: env(safe-area-inset-top);
+    height: calc(100% + var(--safe-area-inset-top));
+  }
+}
+
+@media (display-mode: fullscreen) {
+  body {
+    height: 100%;
+  }
+}
+
+@media (display-mode: standalone) {
+  body {
+    height: 100%;
+  }
+}
