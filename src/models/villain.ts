@@ -8,6 +8,7 @@ export type CustomToken = {
 };
 
 export type Villain = {
+  name: string;
   image: string;
   customToken?: CustomToken;
 };

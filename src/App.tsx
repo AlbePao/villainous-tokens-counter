@@ -15,7 +15,7 @@ function App() {
       ) : (
         <div className='w-full mx-auto md:max-w-[67.5rem] grid grid-cols-2  md:grid-cols-3'>
           {villains.map((villain) => (
-            <VillainCard key={villain.image} {...villain} onClick={() => setVillain(villain)} />
+            <VillainCard key={villain.name} {...villain} onClick={() => setVillain(villain)} />
           ))}
         </div>
       )}
