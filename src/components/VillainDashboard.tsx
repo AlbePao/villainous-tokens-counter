@@ -11,7 +11,11 @@ export type VillainProps = Villain & {
 export const VillainDashboard = (props: VillainProps) => {
   const { image, customToken, onCancel } = props;
 
-  const { request, release } = useWakeLock();
+  const { request, release } = useWakeLock({
+    onRequest: () => alert('Screen Wake Lock: requested!'),
+    onError: () => alert('An error happened 💥'),
+    onRelease: () => alert('Screen Wake Lock: released!'),
+  });
 
   useEffect(() => {
     request();
