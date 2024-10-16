@@ -11,11 +11,8 @@ export type VillainProps = Villain & {
 export const VillainDashboard = (props: VillainProps) => {
   const { image, customToken, onCancel } = props;
 
-  const { request, release } = useWakeLock({
-    onRequest: () => alert('Screen Wake Lock: requested!'),
-    onError: () => alert('An error happened 💥'),
-    onRelease: () => alert('Screen Wake Lock: released!'),
-  });
+  // TODO: find a workaround for this https://bugs.webkit.org/show_bug.cgi?id=254545
+  const { request, release } = useWakeLock();
 
   useEffect(() => {
     request();
