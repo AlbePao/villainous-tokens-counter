@@ -23,7 +23,7 @@ function App() {
   };
 
   return (
-    <div className='flex flex-1 w-screen p-safe'>
+    <>
       {villain ? (
         <VillainDashboard {...villain} onCancel={() => onChange(null)} />
       ) : (
@@ -33,7 +33,7 @@ function App() {
           ))}
         </div>
       )}
-    </div>
+    </>
   );
 }
 

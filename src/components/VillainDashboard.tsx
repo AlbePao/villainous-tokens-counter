@@ -14,7 +14,7 @@ export const VillainDashboard = (props: VillainProps) => {
       className='w-full h-full flex mx-auto md:m-auto md:max-w-[22.5rem] bg-contain bg-no-repeat md:min-h-[512px]'
       style={{ backgroundImage: `url(${image})` }}
     >
-      <div className='mt-auto w-full gap-4 bg-gradient-to-t from-black from-50%'>
+      <div className='mt-auto w-full gap-4 bg-gradient-to-t from-neutral-950 from-50%'>
         <UpperButtons onCancel={onCancel} />
         <TokensCounter />
         {customToken && <TokensCounter customToken={customToken} />}
