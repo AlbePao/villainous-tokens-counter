@@ -9,7 +9,7 @@ function App() {
   const [villain, setVillain] = useState<Villain | null>(null);
 
   return (
-    <div className='w-screen h-screen'>
+    <div className='w-screen h-dvh'>
       {villain ? (
         <VillainDashboard {...villain} onCancel={() => setVillain(null)} />
       ) : (
