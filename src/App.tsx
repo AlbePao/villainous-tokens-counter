@@ -22,17 +22,13 @@ function App() {
     setVillain(villain);
   };
 
-  return (
-    <div className='w-full p-safe'>
-      {villain ? (
-        <VillainDashboard {...villain} onCancel={() => onChange(null)} />
-      ) : (
-        <div className='w-full mx-auto md:max-w-[67.5rem] grid grid-cols-2  md:grid-cols-3'>
-          {villains.map((villain) => (
-            <VillainCard key={villain.name} {...villain} onClick={() => onChange(villain)} />
-          ))}
-        </div>
-      )}
+  return villain ? (
+    <VillainDashboard {...villain} onCancel={() => onChange(null)} />
+  ) : (
+    <div className='w-full p-safe mx-auto md:max-w-[67.5rem] grid grid-cols-2  md:grid-cols-3'>
+      {villains.map((villain) => (
+        <VillainCard key={villain.name} {...villain} onClick={() => onChange(villain)} />
+      ))}
     </div>
   );
 }
