@@ -7,7 +7,7 @@ import { Villain } from './models/villain';
 import { villains } from './models/villains-list';
 
 function App() {
-  const { isSupported, released, request, release } = useWakeLock({
+  const { isSupported, request, release } = useWakeLock({
     onRequest: () => alert('Screen Wake Lock: requested!'),
     onError: () => alert('An error happened 💥'),
     onRelease: () => alert('Screen Wake Lock: released!'),
