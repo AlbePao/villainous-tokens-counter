@@ -19,7 +19,7 @@ export const VillainDashboard = (props: VillainProps) => {
     return () => {
       release();
     };
-  }, [release, request]);
+  });
 
   return (
     <div
