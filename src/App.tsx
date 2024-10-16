@@ -7,11 +7,7 @@ import { Villain } from './models/villain';
 import { villains } from './models/villains-list';
 
 function App() {
-  const { isSupported, request, release } = useWakeLock({
-    onRequest: () => alert('Screen Wake Lock: requested!'),
-    onError: () => alert('An error happened 💥'),
-    onRelease: () => alert('Screen Wake Lock: released!'),
-  });
+  const { isSupported, request, release } = useWakeLock();
   const [villain, setVillain] = useState<Villain | null>(null);
 
   const onChange = (villain: Villain | null) => {
@@ -27,9 +23,9 @@ function App() {
   };
 
   return (
-    <div className='w-screen h-lvh'>
+    <div className='flex flex-1 w-screen p-safe'>
       {villain ? (
-        <VillainDashboard {...villain} onCancel={() => setVillain(null)} />
+        <VillainDashboard {...villain} onCancel={() => onChange(null)} />
       ) : (
         <div className='w-full mx-auto md:max-w-[67.5rem] grid grid-cols-2  md:grid-cols-3'>
           {villains.map((villain) => (
