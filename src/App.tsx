@@ -1,15 +1,27 @@
 import '@fontsource/pirata-one';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { useWakeLock } from 'react-screen-wake-lock';
 import { VillainCard } from './components/VillainCard';
 import { VillainDashboard } from './components/VillainDashboard';
 import { Villain } from './models/villain';
 import { villains } from './models/villains-list';
 
 function App() {
+  const wakeAutoLock = useWakeLock();
   const [villain, setVillain] = useState<Villain | null>(null);
 
+  useEffect(() => {
+    const { request, release } = wakeAutoLock;
+
+    if (villain) {
+      request();
+    } else {
+      release();
+    }
+  }, [villain, wakeAutoLock]);
+
   return (
-    <div className='w-screen h-dvh'>
+    <div className='w-screen h-svh'>
       {villain ? (
         <VillainDashboard {...villain} onCancel={() => setVillain(null)} />
       ) : (

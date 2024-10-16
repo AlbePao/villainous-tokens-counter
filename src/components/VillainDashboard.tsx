@@ -1,5 +1,3 @@
-import { useEffect } from 'react';
-import { useWakeLock } from 'react-screen-wake-lock';
 import { Villain } from '../models/villain';
 import { TokensCounter } from './TokensCounter';
 import { UpperButtons } from './UpperButtons';
@@ -10,16 +8,6 @@ export type VillainProps = Villain & {
 
 export const VillainDashboard = (props: VillainProps) => {
   const { image, customToken, onCancel } = props;
-
-  const { request, release } = useWakeLock();
-
-  useEffect(() => {
-    request();
-
-    return () => {
-      release();
-    };
-  });
 
   return (
     <div
