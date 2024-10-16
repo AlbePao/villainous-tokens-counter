@@ -23,7 +23,7 @@ function App() {
   };
 
   return (
-    <div className='flex flex-1 w-screen p-safe'>
+    <div className='w-screen p-safe'>
       {villain ? (
         <VillainDashboard {...villain} onCancel={() => onChange(null)} />
       ) : (
