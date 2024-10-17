@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "preview:expose": "vite preview --host",
-    "generate-pwa-assets": "pwa-assets-generator --preset minimal-2023 public/logo.png"
+    "generate-pwa-assets": "pwa-assets-generator"
   },
   "dependencies": {
     "@fontsource/pirata-one": "^5.1.0",
