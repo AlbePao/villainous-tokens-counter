@@ -3,7 +3,7 @@ import { VitePWAOptions } from 'vite-plugin-pwa';
 // you can copy the base structure of manifest object.
 export const manifestForPlugin: Partial<VitePWAOptions> = {
   registerType: 'prompt',
-  includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'masked-icon.svg', 'villains/*.webp', 'splash_screens/*.webp'],
+  includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'masked-icon.svg', 'villains/*.webp', 'splash_screens/*.png'],
   manifest: {
     name: 'Villainous Tokens',
     short_name: 'Villainous Tokens',
