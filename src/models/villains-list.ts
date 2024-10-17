@@ -4,37 +4,37 @@ export const villains: Villain[] = [
   // The Worst Takes It All
   {
     name: 'Captain Hook',
-    image: '/Captain_Hook.png',
+    image: '/villains/Captain_Hook.webp',
   },
   {
     name: 'Jafar',
-    image: '/Jafar.png',
+    image: '/villains/Jafar.webp',
   },
   {
     name: 'Maleficent',
-    image: '/Maleficent.png',
+    image: '/villains/Maleficent.webp',
   },
   {
     name: 'Prince John',
-    image: '/Prince_John.png',
+    image: '/villains/Prince_John.webp',
   },
   {
     name: 'Queen of Hearts',
-    image: '/Queen_of_Hearts.png',
+    image: '/villains/Queen_of_Hearts.webp',
   },
   {
     name: 'Ursula',
-    image: '/Ursula.png',
+    image: '/villains/Ursula.webp',
   },
 
   // Wicked to the Core
   {
     name: 'Dr Facilier',
-    image: '/Dr_Facilier.png',
+    image: '/villains/Dr_Facilier.webp',
   },
   {
     name: 'Evil Queen',
-    image: '/Evil_Queen.png',
+    image: '/villains/Evil_Queen.webp',
     customToken: {
       name: 'Veleno',
       color: {
@@ -46,31 +46,31 @@ export const villains: Villain[] = [
   },
   {
     name: 'Hades',
-    image: '/Hades.png',
+    image: '/villains/Hades.webp',
   },
 
   // Evil Comes Prepared
   {
     name: 'Ratigan',
-    image: '/Ratigan.png',
+    image: '/villains/Ratigan.webp',
   },
   {
     name: 'Scar',
-    image: '/Scar.png',
+    image: '/villains/Scar.webp',
   },
   {
     name: 'Yzma',
-    image: '/Yzma.png',
+    image: '/villains/Yzma.webp',
   },
 
   // Perfectly Wretched
   {
     name: 'Cruella De Vil',
-    image: '/Cruella_De_Vil.png',
+    image: '/villains/Cruella_De_Vil.webp',
   },
   {
     name: 'Mother Gothel',
-    image: '/Mother_Gothel.png',
+    image: '/villains/Mother_Gothel.webp',
     customToken: {
       name: 'Fiducia',
       color: {
@@ -82,50 +82,50 @@ export const villains: Villain[] = [
   },
   {
     name: 'Pete',
-    image: '/Pete.png',
+    image: '/villains/Pete.webp',
   },
 
   // Despicable Plots
   {
     name: 'Gaston',
-    image: '/Gaston.png',
+    image: '/villains/Gaston.webp',
   },
   {
     name: 'Horned King',
-    image: '/Horned_King.png',
+    image: '/villains/Horned_King.webp',
   },
   {
     name: 'Lady Tremaine',
-    image: '/Lady_Tremaine.png',
+    image: '/villains/Lady_Tremaine.webp',
   },
 
   // Bigger and Badder
   {
     name: 'Lotso',
-    image: '/Lotso.png',
+    image: '/villains/Lotso.webp',
   },
   {
     name: 'Madam Mim',
-    image: '/Madam_Mim.png',
+    image: '/villains/Madam_Mim.webp',
   },
   {
     name: 'Syndrome',
-    image: '/Syndrome.png',
+    image: '/villains/Syndrome.webp',
   },
 
   // Filled With Fright
   {
     name: 'Oogie Boogie',
-    image: '/Oogie_Boogie.png',
+    image: '/villains/Oogie_Boogie.webp',
   },
 
   // Sugar and Spite
   {
     name: 'King Candy',
-    image: '/King_Candy.png',
+    image: '/villains/King_Candy.webp',
   },
   {
     name: 'Shere Khan',
-    image: '/Shere_Khan.png',
+    image: '/villains/Shere_Khan.webp',
   },
 ];
