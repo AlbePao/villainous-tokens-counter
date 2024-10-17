@@ -57,6 +57,14 @@ export const villains: Villain[] = [
   {
     name: 'Scar',
     image: '/villains/Scar.webp',
+    customToken: {
+      name: 'Successione',
+      color: {
+        border: 'border-orange-600/40 active:border-orange-600/60',
+        shadow: 'active:shadow-orange-500/60',
+        text: 'text-orange-500/60',
+      },
+    },
   },
   {
     name: 'Yzma',
